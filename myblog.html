@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Networking Engineer Blog</title>
+<h> M. MURLI KRISHNA </h>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <img src="Murali.jpg">
+<style>
+	body {
+		background-color: lightblue;
+	      }
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.left-sidebar {
+    width: 25%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: relative;
+}
+
+.toggle-button {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#sidebar {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar li a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+#sidebar li a:hover {
+    background-color: #ddd;
+}
+
+.main {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+</style>
+
+    <div class="container">
+        <div class="header">
+            <h1>Personal Networking Engineer Blog</h1>
+        </div>
+        <div class="content">
+            <div class="left-sidebar">
+                <div class="toggle-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="sidebar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h2>Welcome to my blog!</h2>
+                <p>This is a blog about networking engineering, where I will share my knowledge, experiences, and insights. Feel free to explore the different sections of the blog using the sliding sidebar navigation.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 Personal Networking Engineer Blog. All rights reserved.</p>
+        </div>
+    </div>
+<script>
+		document.addEventListener("DOMContentLoaded", function() {
+    var toggleButton = document.querySelector(".toggle-button");
+    var sidebar = document.getElementById("sidebar");
+    var sidebarVisible = false;
+
+    toggleButton.onclick = function() {
+        if (sidebarVisible) {
+            sidebar.style.left = "-100%";
+            sidebarVisible = false;
+        } else {
+            sidebar.style.left = "0";
+            sidebarVisible = true;
+        }
+    };
+    
+    window.addEventListener("resize", function () {
+        if (window.innerWidth < 768) {
+            toggleButton.style.display = "block";
+            sidebar.style.left = "-100%";
+            sidebarVisible = false;
+        } else {
+            toggleButton.style.display = "none";
+            sidebar.style.left = "0";
+            sidebarVisible = true;
+        }
+    });
+});
+
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
