@@ -1,121 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Networking Engineer Blog</title>
-<h> M. MURLI KRISHNA </h>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <img src="https://drive.google.com/file/d/1v-qAAsghn_fpy_6IKdyK4B8Aa8JMIM-G/view?usp=drive_link">
-<style>
-	body {
-		background-color: lightblue;
-	      }
-{
-    box-sizing: border-box;
-}
- h1, h2, h3 {
-        font-weight: bold;
-        animation: tumble 1s ease-in-out infinite alternate-reverse;
-    }
- </style>
-</head>
-<body>
-
-.header {
-    text-align: center;
-    background-color: #f2f2f2;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.content {
-    display: flex;
-}
-
-.left-sidebar {
-    width: 25%;
-    background-color: #f2f2f2;
-    padding: 10px;
-    position: relative;
-}
-
-.toggle-button {
-    display: none;
-    cursor: pointer;
-}
-
-.toggle-button span {
-    display: block;
-    width: 27px;
-    height: 3px;
-    background-color: #333;
-    margin-bottom: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#sidebar {
-    list-style-type: none;
-    padding: 0;
-}
-
-#sidebar li {
-    margin-bottom: 10px;
-}
-
-#sidebar li a {
-    display: block;
-    padding: 5px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+    <style>
+    body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     color: #333;
-    text-decoration: none;
 }
 
-#sidebar li a:hover {
-    background-color: #ddd;
-}
-
-.main {
-    flex: 1;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.footer {
-    background-color: #f2f2f2;
+header {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px 0;
 }
-</style>
 
-    <div class="container">
-        <div class="header">
-            <h1>Personal Networking Engineer Blog</h1>
-        </div>
-        <div class="content">
-            <div class="left-sidebar">
-                <div class="toggle-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul id="sidebar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Posts</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="main">
-                <h2>Welcome to my blog!</h2>
-                <p>This is a blog about networking engineering, where I will share my knowledge, experiences, and insights. Feel free to explore the different sections of the blog using the sliding sidebar navigation.</p>
-            </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2023 Personal Networking Engineer Blog. All rights reserved.</p>
-        </div>
-    </div>
+main {
+    padding: 20px;
+    text-align: center;
+}
 
-    <script src="kris.js"></script>
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+    </style>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<h1>MURLI KRISHNA</h1>
+</header>
+<main>
+<section>
+<h2></h2>
+    <p>In the world of IT and networking, a solid understanding of network infrastructure and the ability to troubleshoot and rectify system issues are essential skills. As an experienced professional in this field, I am dedicated to ensuring seamless connectivity and optimal performance for any network environment.</p>
+
+<p>My expertise lies in designing, implementing, and maintaining robust network infrastructures that can support the growing needs of businesses. From setting up complex network architectures to configuring routers, switches, and firewalls, I am well-versed in creating efficient and secure networks that facilitate smooth data flow and communication.</p>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 krish</p>
+</footer>
+<script>// Create home page button
+var homeButton = document.createElement("button");
+homeButton.innerHTML = "Home";
+homeButton.onclick = function() {
+  // Code to execute when home button is clicked
+  window.location.href = "index.html"; // Replace with the URL of your home page
+};
+
+// Create contents button
+var contentsButton = document.createElement("button");
+contentsButton.innerHTML = "Contents";
+contentsButton.onclick = function() {
+  // Code to execute when contents button is clicked
+  window.location.href = "contents.html"; // Replace with the URL of your contents page
+};
+
+// Create about me button
+var aboutMeButton = document.createElement("button");
+aboutMeButton.innerHTML = "About Me";
+aboutMeButton.onclick = function() {
+  // Code to execute when about me button is clicked
+  window.location.href = "about.html"; // Replace with the URL of your about me page
+};
+
+// Append buttons to the HTML body
+document.body.appendChild(homeButton);
+document.body.appendChild(contentsButton);
+document.body.appendChild(aboutMeButton);
+    </script>
 </body>
 </html>
